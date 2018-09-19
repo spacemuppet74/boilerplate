@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const el = document.querySelector("#app");
+const el = document.querySelector("#root");
 
 import "./index.scss";
 
