@@ -26,7 +26,7 @@ const cleanWebpackPlugin = new CleanWebpackPlugin(
 module.exports = {
   mode: "production",
   devtool: "source-map",
-  entry: "./src/index.js",
+  entry: ["@babel/polyfill", "whatwg-fetch", "./src/index.js"],
   output: {
     chunkFilename: "[name].[chunkhash:4].js",
     filename: "[name].[chunkhash:4].js",
